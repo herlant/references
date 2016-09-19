@@ -16,7 +16,7 @@ The best way to use this repository is as a submodule to another Git repository 
 
 To add this repository as a submodule, `cd` into the Git directory with your LaTeX files, then run
 ```
-git submodule add https://github.com/hadmoni/references.git refs
+git submodule add https://git.personalrobotics.ri.cmu.edu/lcv/references.git refs
 ```
 This will create a `refs` subdirectory that links to this repository.
 
