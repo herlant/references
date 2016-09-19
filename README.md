@@ -3,12 +3,12 @@ Bibtex reference files. The main file ``master.bib`` includes all references, wh
 
 To use short name abbreviations in your `.tex` file, use
 ```
-\bibliography{shortnames,master}
+\bibliography{refs/shortnames,refs/master}
 ```
 
 To use long names in your `.tex` file, use
 ```
-\bibliography{longnames,master}
+\bibliography{refs/longnames,refs/master}
 ```
 
 ## Creating a submodule
@@ -30,4 +30,10 @@ If you've already cloned a repository that links to this submodule without using
 ```
 git submodule init # initializes the local configuration file
 git submodule update # fetches data from the appropriate commit
+```
+
+## Getting most recent version of submodule
+If there are changes made to the references that you want to pull into a separate git repo, but you've already set it up with the submodule, you can get the newest version, by
+```
+git submodule update --remote
 ```
